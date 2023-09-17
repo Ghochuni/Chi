@@ -94,9 +94,7 @@
         function displayChickenRecipes() {
             const chickenRecipesElement = document.getElementById("chicken-recipes");
             // Embed YouTube video or display a list of recipe links here
-            // Example: chickenRecipesElement.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" frameborder="0" allowfullscreen></iframe>';
-        }
-
+            
         // JavaScript to fetch and display world news
         async function fetchWorldNews() {
             const apiKey = 'https://newsapi.org/'y
