@@ -82,7 +82,7 @@
         // JavaScript to fetch and display gardening news
         async function fetchGardeningNews() {
             const gardeningNewsElement = document.getElementById("gardening-news");
-            const gardeningNewsApiUrl = 'YOUR_GARDENING_NEWS_API_URL'; // Replace with the URL of the gardening news API
+            const gardeningNewsApiUrl = 'https://newsapi.org/'
             try {
                 const response = await fetch(gardeningNewsApiUrl);
                 const data = await response.json();
@@ -102,7 +102,7 @@
 
         // JavaScript to fetch and display world news
         async function fetchWorldNews() {
-            const apiKey = 'YOUR_API_KEY'; // Replace with your API key
+            const apiKey = 'https://newsapi.org/'y
             const currentDate = new Date();
             const targetDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), 7, 0, 0); // 7:00 AM
             // Check if it's before 7:00 AM, if so, set the target date to yesterday
