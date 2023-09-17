@@ -87,9 +87,7 @@
         function displayChickenRecipes() {
             const chickenRecipesElement = document.getElementById("chicken-recipes");
             // Embed YouTube video or display a list of recipe links here
-            Example:
-
-        // JavaScript to fetch and display world news
+   // JavaScript to fetch and display world news
         async function fetchWorldNews() {
             const apiKey = 'f8456bee7f5649b99e823b48aa1225d9'
             const currentDate = new Date();
@@ -98,6 +96,8 @@
             if (currentDate.getHours() < 7) {
                 targetDate.setDate(targetDate.getDate() - 1);
             }
+						Example: chickenRecipesElement.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0"
+
             const newsDate = targetDate.toISOString().split('T')[0]; // Format date as 'YYYY-MM-DD'
             const apiUrl = `https://newsapi.org/v2/everything?q=world&from=${newsDate}&to=${newsDate}&apiKey=${apiKey}`;
             try {
