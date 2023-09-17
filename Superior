@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Anjali Sanyal's Personal Page</title>
+    <style>
+        body {
+            font-family: "French Script MT", cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: blue;
+        }
+        .header {
+            text-align: center;
+            font-size: 72px;
+            color: seagreen;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .hobbies {
+            font-size: 60px;
+            color: seagreen;
+        }
+        .article {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>Date: <span id="date"></span></div>
+        <div>Day: <span id="day"></span></div>
+        <div>Time: <span id="time"></span></div>
+        <div>Year: <span id="year"></span></div>
+        <div>Timezone: <span id="timezone"></span></div>
+        <div>Hour: <span id="hour"></span></div>
+        <div>Minute: <span id="minute"></span></div>
+        <div>Second: <span id="second"></span></div>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Anjali Sanyal's Personal Page</h1>
+        <p>Hello, I'm Anjali Sanyal, a retired chemistry teacher, and I'm 75 years old. I currently live with my husband, Amarnath Sanyal, and my elder daughter in our house at Reserve Park, Canal West Road.</p>
+        <p>My grandson, Ujaan G Sanyal, is creating this webpage for me. I can't do many things now, but I am happy that they all love me so much.</p>
+        <p>This is my personal webpage where you can access Disney Hotstar and Zee 5. Additionally, you'll find easy chicken recipes here written in Cobol language.</p>
+        <p>My hobbies include gardening, music, reading, and watching movies.</p>
+        
+        <div class="hobbies">Hobbies:</div>
+        <ul>
+            <li>Gardening</li>
+            <li>Music</li>
+            <li>Reading</li>
+            <li>Watching Movies</li>
+        </ul>
+        
+        <div class="article">
+            <h2>New Articles</h2>
+            <p>Here are some new articles about your hobbies:</p>
+            
+            <!-- Gardening Article -->
+            <h3>Gardening: Tips for a Beautiful Garden</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis tristique justo, sed tempor urna. Nulla facilisi.</p>
+            
+            <!-- Music Article -->
+            <h3>Music: Exploring the World of Classical Music</h3>
+            <p>Vivamus sed justo at turpis ultrices fringilla. Sed vitae malesuada urna. Sed in nunc eu libero eleifend dignissim.</p>
+            
+            <!-- Reading Article -->
+            <h3>Reading: Best Books to Read This Year</h3>
+            <p>Proin a justo non odio tristique vestibulum. Aliquam erat volutpat. Vestibulum dapibus elit ut fringilla.</p>
+            
+            <!-- Movies Article -->
+            <h3>Movies: Must-Watch Films of the Decade</h3>
+            <p>Donec ullamcorper est vitae mi euismod, at tempor arcu fringilla. Aenean auctor lorem at congue varius.</p>
+        </div>
+        
+        <div class="article">
+            <h2>Latest News</h2>
+            <p>We'll keep you updated with the latest news whenever possible.</p>
+        </div>
+        
+        <p>Thank you for visiting my webpage. Please come again!</p>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('date').textContent = now.toDateString();
+            document.getElementById('day').textContent = now.toLocaleDateString('en-US', { weekday: 'long' });
+            document.getElementById('time').textContent = now.toLocaleTimeString('en-US', { hour12: false });
+            document.getElementById('year').textContent = now.getFullYear();
+            document.getElementById('timezone').textContent = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            document.getElementById('hour').textContent = now.getHours();
+            document.getElementById('minute').textContent = now.getMinutes();
+            document.getElementById('second').textContent = now.getSeconds();
+        }
+        
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+        
+        // Initial call to set the date and time
+        updateDateTime();
+    </script>
+</body>
+</html>
