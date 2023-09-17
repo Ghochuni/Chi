@@ -7,7 +7,7 @@
     <style>
         /* Specify the fonts and font sizes for headings and text */
         h1 {
-            font-family: "FrenchscriptMT", cursive;
+            font-family:"FrenchscriptMT", cursive;
             font-size: 72px;
         }
 
@@ -89,7 +89,7 @@
 
         // JavaScript to fetch gardening news
         async function fetchGardeningNews() {
-            const apiKey = 'YOUR_API_KEY'; // Replace with your API key
+            const apiKey = 'f8456bee7f5649b99e823b48aa1225d9'; // Replace with your API key
             const apiUrl = `https://newsapi.org/v2/everything?q=gardening&apiKey=${apiKey}`;
 
             try {
@@ -111,7 +111,7 @@
 
         // JavaScript to fetch and display world news
         async function fetchWorldNews() {
-            const apiKey = 'YOUR_API_KEY'; // Replace with your API key
+            const apiKey = 'f8456bee7f5649b99e823b48aa1225d9'; // Replace with your API key
             const currentDate = new Date();
             const targetDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), 7, 0, 0); // 7:00 AM
 
