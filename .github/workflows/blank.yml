@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjali Sanyal's Personal Page</title>
-    <!-- Add any desired CSS styles or links to external stylesheets here -->
-    <style>
-        /* Apply French Script MT font and font size 36 to all text */
-        body {
-            font-family:Calibri
-            font-size:36px
-            }
-            
+    <!-- Link to a custom CSS stylesheet for the color pattern -->
+    <link rel="stylesheet" type="text/css" href="custom-styles.css">
+</head>
+<body>
     <audio autoplay controls>
         <source src="good_morning_message.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -54,23 +50,20 @@
         <h2>World News</h2>
         <div id="world-news"></div>
     </section>
-
-    <!-- You can continue adding more sections or content as needed -->
-
-    <script>
+<script>
         // JavaScript to display current date and time
         function updateTime() {
             const dateTimeElement = document.getElementById("date-time");
             const now = new Date();
             const options = { 
-                weekday:long
-                year:numeric
-                month:long 
-                day:numeric
-                hour:numeric 
-                minute:numeric
-                second:numeric 
-                timeZoneName:short
+                weekday:'long', 
+                year:'numeric', 
+                month:'long', 
+                day:'numeric', 
+                hour:'numeric', 
+                minute:'numeric', 
+                second:'numeric', 
+                timeZoneName:'short' 
             };
             const formattedDateTime = now.toLocaleDateString('en-US', options);
             dateTimeElement.textContent = formattedDateTime;
@@ -79,7 +72,7 @@
         // JavaScript to fetch and display gardening news
         async function fetchGardeningNews() {
             const gardeningNewsElement = document.getElementById("gardening-news");
-            const gardeningNewsApiUrl = 'https://newsapi.org/'
+            const gardeningNewsApiUrl = 'f8456bee7f5649b99e823b48aa1225d9'
             try {
                 const response = await fetch(gardeningNewsApiUrl);
                 const data = await response.json();
@@ -94,10 +87,11 @@
         function displayChickenRecipes() {
             const chickenRecipesElement = document.getElementById("chicken-recipes");
             // Embed YouTube video or display a list of recipe links here
-            
+            Example:
+
         // JavaScript to fetch and display world news
         async function fetchWorldNews() {
-            const apiKey = 'https://newsapi.org/'y
+            const apiKey = 'f8456bee7f5649b99e823b48aa1225d9'
             const currentDate = new Date();
             const targetDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), 7, 0, 0); // 7:00 AM
             // Check if it's before 7:00 AM, if so, set the target date to yesterday
