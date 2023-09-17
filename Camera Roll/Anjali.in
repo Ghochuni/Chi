@@ -7,17 +7,17 @@
     <style>
         /* Specify the fonts and font sizes for headings and text */
         h1 {
-            font-family:"FrenchscriptMT", cursive;
+            font-family:"FrenchscriptMT"
             font-size: 72px;
         }
 
         h2 {
-            font-family: "FrenchscriptMT", cursive;
+            font-family: "FrenchscriptMT"
             font-size: 72px;
         }
 
         p {
-            font-family: "FrenchscriptMT", cursive;
+            font-family: "FrenchscriptMT"
             font-size: 36px;
         }
     </style>
