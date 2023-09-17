@@ -8,7 +8,7 @@
     <style>
         /* Apply French Script MT font and font size 36 to all text */
         body {
-            font-family: "French Script MT", cursive;
+            font-family: "French Script MT"
             font-size: 36px;}
     <audio autoplay controls>
         <source src="good_morning_message.mp3" type="audio/mpeg">
