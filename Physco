@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chessing Analyticals - The Chess Corner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black; /* Set background to black */
+            color: white; /* Set text color to white */
+        }
+        header {
+            background-color: #0073e6;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .video-section {
+            margin: 20px;
+            padding: 20px;
+            background-color: black; /* Set background to black */
+            border-radius: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            color: #0073e6;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Chessing Analyticals</h1>
+        <h2>The Chess Corner</h2>
+    </header>
+    <div class="video-section">
+        <h2>Chess Videos for Kids</h2>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <p>Video last updated: September 17, 2023</p>
+    </div>
+    <div>
+        <h2>Discuss Chess on Video</h2>
+        <p>Hello, I'm Ujaan the Sanyal, and this is Chessing Analyticals, a place where we can discuss chess on video. Feel free to join the conversation and share your thoughts on chess!</p>
+    </div>
+    <div class="links">
+        <h2>Useful Links</h2>
+        <a href="https://www.duolingo.com/">Duolingo</a>
+        <a href="https://www.chesskid.com/">Chesskid</a>
+        <a href="https://www.chess.com/">Chess.com</a>
+        <a href="https://lichess.org/">Lichess</a>
+    </div>
+    <footer>
+        <p>&copy; 2023 Chessing Analyticals | Ujaan the Sanyal</p>
+    </footer>
+</body>
+</html>
